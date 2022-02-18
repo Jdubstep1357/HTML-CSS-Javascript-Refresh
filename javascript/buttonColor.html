@@ -4,19 +4,17 @@
 <body>
 
 <p>The button changes the color of this text when clicked. </p>
-<button onclick="changeColor()">Click me</button>
+<button onclick="changeText()">Click me</button>
 
-<p id="demo2"></p>
+<p id="demo2">This text is green</p>
 
-<!-- this changes the color of the button -->
+<!-- this changes the color of the text by grabbing its ID -->
 <script>
 
-    document.getElementById('change').onclick = changeColor;   
 
-    function changeColor() {
-        document.body.style.color = "purple";
-        return false;
-    }   
+    function changeText() {
+        document.getElementById("demo2").style.color = "green";
+    }
 
 
 </script>
